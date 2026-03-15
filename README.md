@@ -97,6 +97,12 @@ Once the infrastructure is finished deploying, grab the ARN of the role:
 ## Export the new Keys as ENV variables to become the new role:
 <img width="779" height="159" alt="Image" src="https://github.com/user-attachments/assets/f82a7bf0-60fe-4ac5-949a-12761630aa92" />
 
+## Now to verify my current identity
+<img width="839" height="140" alt="Image" src="https://github.com/user-attachments/assets/7f65c296-f981-442c-8151-7ee73fe8434f" />
+
+## Both roles are testing and working
+
+
 
 ## Validate
 
