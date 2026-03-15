@@ -92,7 +92,7 @@ Once the infrastructure is finished deploying, grab the ARN of the role:
 <img width="761" height="220" alt="Image" src="https://github.com/user-attachments/assets/7ed6b5a5-4dea-4217-b879-060ee77c4f58" />
 
 ## Input the ARN and MFA to get the new Access Keys for the new role
-
+<img width="925" height="463" alt="Image" src="https://github.com/user-attachments/assets/06f99452-7ee4-490a-9ca0-b54e1920e666" />
 
 
 ## Validate
