@@ -91,20 +91,8 @@ Once the infrastructure is finished deploying, grab the ARN of the role:
 ## Next grab the MFA device info:  
 <img width="761" height="220" alt="Image" src="https://github.com/user-attachments/assets/7ed6b5a5-4dea-4217-b879-060ee77c4f58" />
 
-## Input the ARN and MFA to get the new Access Keys for the new role
-<img width="925" height="463" alt="Image" src="https://github.com/user-attachments/assets/06f99452-7ee4-490a-9ca0-b54e1920e666" />
-
-## Export the new Keys as ENV variables to become the new role:
-<img width="779" height="159" alt="Image" src="https://github.com/user-attachments/assets/f82a7bf0-60fe-4ac5-949a-12761630aa92" />
-
-## Now to verify my current identity
-<img width="839" height="140" alt="Image" src="https://github.com/user-attachments/assets/7f65c296-f981-442c-8151-7ee73fe8434f" />
-
-## Both roles are testing and working
-<img width="967" height="459" alt="Image" src="https://github.com/user-attachments/assets/9595d6e6-7050-4eee-bf18-ea0b91b5ca8c" />
-
 ## Validate
-
+Input the ARN and MFA to get the new Access Keys for the new role.  
 ```bash
 # Assume the audit role (replace with your actual MFA serial and live token code)
 aws sts assume-role \
@@ -112,15 +100,27 @@ aws sts assume-role \
   --role-session-name test-session \
   --serial-number arn:aws:iam::YOUR_ACCOUNT_ID:mfa/YOUR_MFA_DEVICE \
   --token-code YOUR_6_DIGIT_CODE
+```
+<img width="925" height="463" alt="Image" src="https://github.com/user-attachments/assets/06f99452-7ee4-490a-9ca0-b54e1920e666" />
 
+## Export the new Keys as ENV variables to become the new role:
+```bash
 # Export the temporary credentials from the response
 export AWS_ACCESS_KEY_ID=ASIA...
 export AWS_SECRET_ACCESS_KEY=...
 export AWS_SESSION_TOKEN=...
+```
+<img width="779" height="159" alt="Image" src="https://github.com/user-attachments/assets/f82a7bf0-60fe-4ac5-949a-12761630aa92" />
 
+## Now to verify my current identity
+```bash
 # Verify you're now operating as the audit role
 aws sts get-caller-identity
 ```
+<img width="839" height="140" alt="Image" src="https://github.com/user-attachments/assets/7f65c296-f981-442c-8151-7ee73fe8434f" />
+
+## Both roles are testing and working
+<img width="967" height="459" alt="Image" src="https://github.com/user-attachments/assets/9595d6e6-7050-4eee-bf18-ea0b91b5ca8c" />
 
 ## Cleanup
 
