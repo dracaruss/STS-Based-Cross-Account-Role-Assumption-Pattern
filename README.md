@@ -101,8 +101,7 @@ Once the infrastructure is finished deploying, grab the ARN of the role:
 <img width="839" height="140" alt="Image" src="https://github.com/user-attachments/assets/7f65c296-f981-442c-8151-7ee73fe8434f" />
 
 ## Both roles are testing and working
-
-
+<img width="967" height="459" alt="Image" src="https://github.com/user-attachments/assets/9595d6e6-7050-4eee-bf18-ea0b91b5ca8c" />
 
 ## Validate
 
