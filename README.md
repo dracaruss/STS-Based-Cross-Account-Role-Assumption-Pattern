@@ -94,6 +94,9 @@ Once the infrastructure is finished deploying, grab the ARN of the role:
 ## Input the ARN and MFA to get the new Access Keys for the new role
 <img width="925" height="463" alt="Image" src="https://github.com/user-attachments/assets/06f99452-7ee4-490a-9ca0-b54e1920e666" />
 
+## Export the new Keys as ENV variables to become the new role:
+<img width="779" height="159" alt="Image" src="https://github.com/user-attachments/assets/f82a7bf0-60fe-4ac5-949a-12761630aa92" />
+
 
 ## Validate
 
