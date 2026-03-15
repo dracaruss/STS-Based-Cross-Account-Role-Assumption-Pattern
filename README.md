@@ -89,6 +89,9 @@ Once the infrastructure is finished deploying, grab the ARN of the role:
 <img width="827" height="793" alt="Image" src="https://github.com/user-attachments/assets/d49576d6-72e5-48f6-b505-a62d8fabe302" />
 
 ## Next grab the MFA device info:  
+<img width="761" height="220" alt="Image" src="https://github.com/user-attachments/assets/7ed6b5a5-4dea-4217-b879-060ee77c4f58" />
+
+## Input the ARN and MFA to get the new Access Keys for the new role
 
 
 
