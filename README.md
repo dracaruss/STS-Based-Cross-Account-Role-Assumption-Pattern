@@ -113,7 +113,7 @@ Once the infrastructure is finished deploying, grab the ARN of the role:
 <img width="761" height="220" alt="Image" src="https://github.com/user-attachments/assets/7ed6b5a5-4dea-4217-b879-060ee77c4f58" />
 
 
-## Transform
+## Validate
 Input the ARN and MFA to get the new Access Keys for the new role.  
 ```bash
 # Assume the audit role (replace with your actual MFA serial and live token code)
@@ -184,8 +184,8 @@ cd ../security-account && terraform destroy -var='workload_account_id=YOUR_ACCOU
 - Store Terraform state remotely in S3 with DynamoDB locking instead of local state files
 - Pull account IDs from SSM Parameter Store or Terraform remote state instead of passing them as *-var* flags
 
-## Tools
 
+## Tools
 - Terraform >= 1.0
 - AWS Provider ~> 5.0
 - AWS CLI with `aws login` for browser-based auth
