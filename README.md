@@ -84,6 +84,14 @@ terraform init
 terraform apply -var='workload_account_id=YOUR_ACCOUNT_ID'
 ```
 
+## Grab the role ARN
+Once the infrastructure is finished deploying, grab the ARN of the role:  
+<img width="827" height="793" alt="Image" src="https://github.com/user-attachments/assets/d49576d6-72e5-48f6-b505-a62d8fabe302" />
+
+## Next grab the MFA device info:  
+
+
+
 ## Validate
 
 ```bash
